@@ -2,8 +2,7 @@ import torch.nn as nn
 
 class AlexNet(nn.Module):
     """
-    A neural network with 5 convolutional layers and 3 fully connected layers.
-    Gradually compresses image information into smaller size.
+    A neural network with 5 convolutional layers and 3 fully connected layers. Gradually compresses image information into smaller size.
 
     Summary:
     •   In terms of training time with gradient descent, saturating nonlinearities tanh(x) are much slower than the non-saturating nonlinearity max(0, x)
@@ -16,7 +15,7 @@ class AlexNet(nn.Module):
 
     References:
     https://papers.nips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
-    https://github.com/dansuh17/alexnet-pytorch
+    https://github.com/dansuh17/alexnet-pytorch/blob/master/model.py
     """
 
     def __init__(self, num_classes=1000):
