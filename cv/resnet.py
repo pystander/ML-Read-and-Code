@@ -2,7 +2,7 @@ import torch.nn as nn
 
 class ResNet(nn.Module):
     """
-    A 34-layer deep netowrk that applys residual learning. Inserts shortcut connections to plain network.
+    A 34-layer deep netowrk that applys residual learning. Inserts shortcut connections to convolutional network.
 
     Summary:
     •   Deeper plain network has higher training error and test error
